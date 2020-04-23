@@ -1,4 +1,4 @@
-from random import randint
+from random import randint 
 armas = ('PEDRA', 'PAPEL', 'TESOURA')
 empate = 0
 cv = 0
