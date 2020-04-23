@@ -7,7 +7,7 @@ while True:
     print('-=-' * 25)
     computador = randint(0, 10)
     número = int(input('Chute um valor: '))
-    par_ou_impar = str(input('\033[1;31;0mPAR / IMPAR\033[m ')).strip().upper()[0]
+    par_ou_impar = str(input('\033[1;31;0mPAR / IMPAR: \033[m ')).strip().upper()[0]
     print(par_ou_impar)
     soma = computador + número
     if soma % 2 == 0:

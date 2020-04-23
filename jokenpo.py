@@ -20,31 +20,31 @@ lin()
 while True:
     computer = randint(0, 2)
     player = int(input('Faça sua jogada: '))
-    print(f'JOGADOR : {armas[player]} X {armas[player]}COMPUTADOR')
+    print(f'JOGADOR : {armas[player]} X {armas[player]}')
     if player == computer:
         print('EMPATE', end=' ')
         empate += 1
     if player == 0:
         if computer == 1:
-            print('computador vence', end=' ')
+            print('computador venci: ' , end=' ')
             cv +=1
         elif computer == 2:
-            print('Jogador venci',end='')
+            print('Jogador venci: ' ,end='')
             pv += 1
     if player == 1:
         if computer == 0:
-            print('Jogador venci',end='')
+            print('Jogador venci: ' ,end='')
             pv += 1
         elif computer == 2:
-            print('computador vence', end=' ')
+            print('computador venci: ' , end=' ')
             cv += 1
 
     if player == 2:
         if computer == 1:
-            print('Jogador venci',end='')
+            print('Jogador venci: ',end='')
             pv += 1
         elif computer == 0:
-            print('computador vence', end=' ')
+            print('computador venci: ', end=' ')
             cv +=1
 
     if cv == 3:

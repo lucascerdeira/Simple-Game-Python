@@ -14,6 +14,7 @@ while choose != 1 and choose != 2 and choose != 3:
 if choose == 1:
     import jokenpo
     __main__ = jokenpo
+    
 elif choose == 2:
     import jogo
     __main__ = jogo
