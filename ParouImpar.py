@@ -1,5 +1,5 @@
 from random import randint #PODERIA TER FEITO COM MENAS LINHAS
-x = 0
+x = 0                       #Tem que fazer melhorias mas é assim mesmo, código de 2019 
 y = ''
 print('-=-' * 25)
 print(f'{y:^20}VAMOS JOGAR PAR OU IMPAR')
