@@ -3,7 +3,7 @@ def lin():
 
 lin()
 c = ''
-print(f'{c:^15}ESCOLHA UM JOGO E DIVIRTASSE')
+print(f'{c:^15}ESCOLHA UM JOGO E DIVIRTA-3SE')
 lin()
 print(f'{c:^15}[ 1 ] JOKENPô [ 2 ] ADVINHÇÃO [ 3 ] Par ou Impar')
 lin()

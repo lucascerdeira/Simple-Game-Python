@@ -1,11 +1,16 @@
 from random import randint 
 armas = ('PEDRA', 'PAPEL', 'TESOURA')
 empate = 0
-cv = 0
-pv = 0
+derrota = 0
+vitória = 0 
 
 
-def lin():
+def pula(): #função para pular linha
+    print()
+
+
+
+def lin(): #função de linhas na tela 
     print('-=' * 20)
 
 
@@ -20,31 +25,36 @@ lin()
 while True:
     computer = randint(0, 2)
     player = int(input('Faça sua jogada: '))
-    print(f'JOGADOR : {armas[player]} X {armas[player]}')
+    print(f'JOGADOR : {armas[player]} X {armas[computer]}')
     if player == computer:
-        print('EMPATE', end=' ')
+        print('EMPATE\n', end=' ')
+        pula()
         empate += 1
     if player == 0:
         if computer == 1:
-            print('computador venci: ' , end=' ')
+            print('computador vence:\n', end=' ')
+            pula()
             cv +=1
         elif computer == 2:
-            print('Jogador venci: ' ,end='')
+            print('Jogador vence:\n',end='')
+            pula()
             pv += 1
     if player == 1:
         if computer == 0:
-            print('Jogador venci: ' ,end='')
+            print('Jogador vence:\n',end='')
+            pula()
             pv += 1
         elif computer == 2:
-            print('computador venci: ' , end=' ')
+            print('computador vence:\n',end=' ')
+            pula()
             cv += 1
 
     if player == 2:
         if computer == 1:
-            print('Jogador venci: ',end='')
+            print('Jogador vence:\n',end='')
             pv += 1
         elif computer == 0:
-            print('computador venci: ', end=' ')
+            print('computador vence:\n', end=' ')
             cv +=1
 
     if cv == 3:

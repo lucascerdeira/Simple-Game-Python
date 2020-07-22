@@ -14,11 +14,12 @@ for attempt in range(1, 6):
     user = int(input('Faça seu chute entre 0 e 10: '))
     print('-='*20)
     if user == computer:
-        print(f'{C:^20}Jogador {name} Venceu!')
+        print(f'{c:^20}Jogador {name} Venceu!')
         victory += 1
+        break
 
     else:
         print(f'{c:^20}Jarvis venceu')
         game_over += 1
 
-print(f'Vitorias {victory}, Derrotas {game_over} ')
+print(f'{victory} Vitorias| {game_over} Derrotas ')
